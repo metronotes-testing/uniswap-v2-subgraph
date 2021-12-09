@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: Quickswap is a decentralized protocol for automated token exchange on Matic.
-repository: https://github.com/QuickSwap/QuickSwap-subgraph.git
+description: Metrosap is a decentralized protocol for automated token exchange on Matic.
+repository: https://github.com/metroswap/metroswap-v2-subgraph.git
 schema:
   file: ./schema.graphql
 dataSources:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: 22270408
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.4
       language: wasm/assemblyscript
       file: ./src/mappings/factory.ts
       entities:
@@ -39,7 +39,7 @@ templates:
       abi: Pair
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.4
       language: wasm/assemblyscript
       file: ./src/mappings/core.ts
       entities:
